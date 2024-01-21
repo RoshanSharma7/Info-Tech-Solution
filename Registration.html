@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Login and Registration Form </title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/registraion.css">
+</head>
+
+<body>
+
+  <!--nav-->
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">
+      <h3>Info-Tech-Solu</h3>
+    </a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="service.html">Service</a>
+    <a href="find-problem.html">Find Problem</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+  <div class="container">
+
+    <form action="register.php" method="post">
+      <h1>Sgin Up</h1>
+      <label>Email</label>
+      <input type="email" placeholder="Email Address" name="email" required class="field">
+      <label>Password</label>
+      <input type="password" placeholder="Password" name="password" required class="field">
+      <label>Confirm Password</label>
+      <input type="password" placeholder="Confirm password" required class="field">
+      <input type="submit" value="submit" class="btn">
+      <div class="login">
+        You have a account than<a href="login.html"> Login</a>
+      </div>
+    </form>
+    
+  </div>
+
+</body>
+
+</html>

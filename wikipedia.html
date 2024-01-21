@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title>Wikipedia App</title>
+    <link rel="stylesheet" href="css/wikipidea.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://www.momentcrm.com/embed"></script>
+    <script>
+      MomentCRM('init', {
+        'teamVanityId': 'info-tech-solution',
+        'doChat': true,
+        'doTracking': true,
+      });
+    </script>
+
+</head>
+
+<body>
+    <!--nav-->
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">
+            <h3>Info-Tech-Solu</h3>
+        </a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Service</a>
+        <a href="find-problem.html">Find Problem</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+
+    <h3>Find your problem here <span>with Info-Tech-Solution's</span></h3>
+    <div id="container">
+        <div id="logo">
+            <img src="images/wiki.png" alt="Wikipedia Logo">
+        </div>
+
+        <div id="search">
+            <input type="text" placeholder="Type & Press Enter To Search" id="searchText">
+            <i class="fas fa-search" id="findNow"></i>
+        </div>
+
+        <div id="searchResult">
+            <!-- <div class="resultItem">
+            <a href="https://en.wikipedia.org/?curid=54345" target="_blank" class="resultTitle">Code Now</a><br>
+            <a href="https://en.wikipedia.org/?curid=54345" target="_blank" class="link">https://en.wikipedia.org/?curid=54345</a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum ex nihil nostrum dolorem aliquid obcaecati! Illum magnam neque placeat odio!</p>
+        </div> -->
+        </div>
+    </div>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

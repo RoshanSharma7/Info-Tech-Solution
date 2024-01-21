@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us | Info-Tech-Sollution's</title>
+    <link rel="stylesheet" href="css/contact.css">
+    
+    <!--font for nav-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://www.momentcrm.com/embed"></script>
+    <script>
+      MomentCRM('init', {
+        'teamVanityId': 'info-tech-solution',
+        'doChat': true,
+        'doTracking': true,
+      });
+    </script>
+
+</head>
+
+<body background="./images/bg.jpg">
+
+    <!--nav-->
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">
+            <h3>Info-Tech-Solu</h3>
+        </a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Service</a>
+        <a href="find-problem.html">Find Problem</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="login.html">Login</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <!--body-->
+    <div class="container">
+        <div class="contact-box">
+            <div class="left">
+                <!--<img src="./images/Info-Tech-Solu.png" alt="">-->
+            </div>
+            <div class="right">
+                <form form action="https://formspree.io/f/mrgjyyjq" method="POST">
+                    <h1>Contact Us</h1>
+                    <input type="text" class="field" placeholder="Enter Your Name" name="Name">
+                    <input type="email" class="field" placeholder="Enter Your Email" name="Email">
+                    <input type="text" name="Country" class="field" placeholder="Enter your area location">
+                    <textarea name="Message" class="field area" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="l-footer">
+            <img src="images/Info-Tech-Solu.png" width="70px" height="70px">
+            <h1>
+                Info Tech Solution
+            </h1>
+            <p>Info Tech Solutions is a company that maintains hardware and software and prepares many other projects
+                including web designing.</p>
+            <br>
+            <h2>Address</h2><br>
+            <p>Word No.06 O.P.M. Amlai. <br>NH-43 Infront of Hanuman Mandhir <br>Dist. Shahdol 484117, Madhya Pradesh
+                <br>India
+            </p>
+        </div>
+        <ul class="r-footer">
+            <li>
+                <h2>Social</h2>
+                <ul class="box">
+                    <li><a href="www.facebook.com" >Facebook</a></li>
+                    <li><a href="www.twitter.com" >Twitter</a></li>
+                    <li><a href="www.instagram.com" >Instagram</a></li>
+                    <li><a href="www.youtube.com" >Youtube</a></li>
+                    <li><a href="www.whatsapp.com">Whatsapp</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2>Service</h2>
+                <ul class="box features">
+                    <li><a href="#">Web Designing</a></li>
+                    <li><a href="#">App Developmant</a></li>
+                    <li><a href="#">UI Designing</a></li>
+                    <li><a href="#">UX Designign</a></li>
+                    <li><a href="#">Game Developmant</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <h2>Contect</h2>
+                <ul class="box">
+                    <li><a href="#">InfoTech@gmail.com</a></li>
+                    <li><a href="#">roshan.amlai96@gmail.com</a></li>
+                    <li><a href="#">+91 93991 02042</a></li>
+                    <li><a href="#">+91 97702 73904</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <h2>Support</h2>
+                <ul class="box">
+                    <li><a href="#">Software Maintenance</a></li>
+                    <li><a href="#">Hardwear Maintenance</a></li>
+                    <li><a href="#">Desktop, Laptop</a></li>
+                    <li><a href="#">Costmor Service</a></li>
+                    <li><a href="#">Privicy Policy</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="b-footer">
+            <br><br>
+            <p> All rights reserved by ©Info-Tech-Solution's 2021</p>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
